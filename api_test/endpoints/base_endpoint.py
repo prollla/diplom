@@ -37,3 +37,7 @@ class BaseEndpoint:
     def make_latin_lower(self, length):
         latin_lowercase_string = ''.join(random.choice(string.ascii_lowercase) for _ in range(length))
         return latin_lowercase_string
+
+    def make_digit(self, length):
+        digit_string = ''.join(random.choice(string.digits) for _ in range(length))
+        return digit_string

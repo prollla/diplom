@@ -1,6 +1,7 @@
 import pytest
 
 from api_test.endpoints.base_endpoint import BaseEndpoint
+from api_test.endpoints.delete_message_endpoint import DeleteMessageEndpoint
 from api_test.endpoints.get_message_endpoint import GetMessageEndpoint
 from api_test.endpoints.post_message_endpoint import PostMessageEndpoint
 
@@ -29,3 +30,8 @@ def get_message_endpoint():
 @pytest.fixture()
 def post_message_endpoint():
     return PostMessageEndpoint()
+
+
+@pytest.fixture()
+def delete_message_endpoint():
+    return DeleteMessageEndpoint()
